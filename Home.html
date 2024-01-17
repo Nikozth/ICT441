@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ningbo University Learning Center</title>
+ 
+  <script src="js/slider.js" defer></script>
+</head>
+<style>
+  body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  h1 {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  img {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .school-image {
+    margin-top: 20px;
+  }
+  .school-image img {
+    width: 100px;
+    height: auto;
+  }
+  .school-values {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+  }
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .school-values {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .slogan-box {
+        background-color: #e6f7ff;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .slider-container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    float: left;
+    width: 100%;
+    display: none;
+  }
+
+  /* 左右切换按钮样式 */
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .slider-controls button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .slider-controls button:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<body>
+    <img src="img\logo.png" style="width: 80px; height: auto; margin: 0 auto;">
+    <h1>Ningbo University Learning Center</h1>
+    <div class="navbar">
+      <a href="Home.html">Home</a>
+      <a href="About Us.html">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Course Details</a></button>
+        <div class="dropdown-content">
+          <a href="Basic Computer.html">Basic Computer</a>
+          <a href="Basic English .html">Basic English</a>
+          <a href="Basic General Mathematics.html">Basic General Mathematics</a>
+        </div>
+      </div>
+      <a href="Form.html">Form</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <div class="slider-container">
+      <div class="slide" ><img src="img\a.png" alt="Slide 2"></div>
+      <div class="slide" ><img src="img\b.png" alt="Slide 3"></div>
+      <div class="slide" ><img src="img\c.png" alt="Slide 4"></div>
+      <div class="slide" ><img src="img\d.png" alt="Slide 5"></div>
+    </div>
+    <div class="school-image">
+      <div class="school-values">
+        <div class="values-section">
+            <div class="value-box">
+                <p>Our Values:</p>
+                <ul style="text-align: left;">
+                    <li>The power of learning: By providing high-quality, accessible educational resources, we empower individuals to reach their full potential and continue to upgrade their skills and knowledge.</li>
+                    <li>Inclusion and diversity: We welcome learners of all backgrounds, cultures and beliefs. On our platform, diversity is an asset that drives us to better understand the world.</li>
+                    <li>Cooperation and sharing: We believe that knowledge sharing and collaboration is the most effective way to learn. In our community, learners are encouraged to interact, collaborate, explore problems and find solutions.</li>
+                    <li>Innovation and adaptation: Education is a constantly evolving field and we actively embrace change and drive innovation. By introducing new educational technologies and approaches, we are committed to providing a more flexible</li>
+                    <li>Personal Growth: We focus on the individual development of each student, providing comprehensive support to help them achieve holistic growth in academic, professional, and personal aspects.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slogan-box">
+            <p>School Slogan: "Harmony of Knowledge and Action, Unleashing Infinite Possibilities"</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- 左右切换按钮 -->
+    <div class="slider-controls">
+      <button class="prev" onclick="plusSlides(-1)">❮</button>
+      <button class="next" onclick="plusSlides(1)">❯</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      NIKO(ZhangTenghui)213190637
+    </footer>
+
+</body>
+</html>
